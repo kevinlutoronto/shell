@@ -28,7 +28,6 @@ mkdir data
 # 2. Move the ./rawdata directory to ./data/raw
 mkdir ./data/raw
 mv ./rawdata ./data/raw
-mv ./rawdata/* ./data/raw/
 
 # 3. List the contents of the ./data/raw directory
 ls ./data/raw
@@ -40,14 +39,11 @@ mkdir ./data/processed/user_logs
 mkdir ./data/processed/event_logs
 
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs
-#cp ./data/raw/rawdata/*server_log_*.log ./data/processed/server_logs/
-cp ./data/raw/*server_log_*.log ./data/processed/server_logs/
+cp ./data/raw/rawdata/*server_log_*.log ./data/processed/server_logs/
 
 # 6. Repeat the above step for user logs and event logs
-#cp ./data/raw/rawdata/user_log_*.log ./data/processed/user_logs/
-#cp ./data/raw/rawdata/event_log_*.log ./data/processed/event_logs/
-cp ./data/raw/user_log_*.log ./data/processed/user_logs/
-cp ./data/raw/event_log_*.log ./data/processed/event_logs/
+cp ./data/raw/rawdata/user_log_*.log ./data/processed/user_logs/
+cp ./data/raw/rawdata/event_log_*.log ./data/processed/event_logs/
 
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
 rm -f ./data/raw/rawdata/*ipaddr*
