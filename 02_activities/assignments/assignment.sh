@@ -19,6 +19,8 @@ unzip rawdata.zip
 
 ###########################################
 # Complete assignment here
+# Name: Kevin Lu
+# Github: kevinlutoronto
 
 # 1. Create a directory named data
 mkdir data
