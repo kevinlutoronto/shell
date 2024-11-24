@@ -11,25 +11,14 @@ set -x
 
 mkdir analysis output
 touch README.md
-<<<<<<< HEAD
 touch analysis/main.py
 
 # download client data
 curl -Lo rawdata.zip https://github.com/UofT-DSI/shell/raw/refs/heads/main/02_activities/assignments/rawdata.zip
-=======
-echo "# Project Name: DSI Consulting Inc." > README.md
-touch analysis/main.py
-
-# download client data
-wget -O rawdata.zip https://github.com/UofT-DSI/shell/raw/refs/heads/main/02_activities/assignments/rawdata.zip
->>>>>>> ea20676d33161a6f4d0fcd3c4f7aa5360f0f4309
 unzip rawdata.zip
 
 ###########################################
 # Complete assignment here
-<<<<<<< HEAD
-# Name: Kevin Lu
-# Github: kevinlutoronto
 
 # 1. Create a directory named data
 mkdir data
