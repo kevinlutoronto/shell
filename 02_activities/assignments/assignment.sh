@@ -20,6 +20,7 @@ unzip rawdata.zip
 ###########################################
 # Complete assignment here
 # Name: Kevin Lu
+# Email: kevin.lu.toronto@gmail.com
 # Github: kevinlutoronto
 
 # 1. Create a directory named data
